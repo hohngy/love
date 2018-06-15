@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Our Love Story-Download</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>   
+    <style>
+        body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
+        #mainDiv{width:100%;height:2000px;}
+        #code{width:8.5rem;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:0.2rem;margin:0 auto;padding:50px 0px;position:relative;top:1000px;}
+        #code .string{color:#2a36ff}
+        #code .keyword{color:#7f0055;font-weight:bold}
+        #code .placeholder{margin-left:15px}
+        #code .space{margin-left:7px}
+        #code .comments{color:#3f7f5f}
+            @media screen and (max-width:640px) {
+                  #code{
+                       font-size:0.3rem;
+                       top:0; 
+                  }   
+                   #mainDiv{width:100%;height:100%;}
+            }
+
+ </style>
+</head>
+<body>
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                <span class="space"/><span class="comments">// 情之为伤，苦了多少人，煞了多少忆。</span><br /><br />
+                <span class="space"/><span class="comments">// 情之为悲，葬了多少花，落了多少思。</span><br /><br />
+                <span class="space"/><span class="comments">// 纵使飞蛾扑火却依然义无反顾。</span><br /><br />
+                <span class="space"/><span class="comments">// 只观情，伤人伤己，却是一生无法割断。</span><br /><br />
+                <span class="space"/><span class="comments">// 落一笔相思，挥洒多少痴情泪。</span><br /><br />
+                <span class="space"/><span class="comments">// 饮一杯浊酒，品了多少世间情。</span><br /><br />
+                <span class="space"/><span class="comments">// 如你是我的莲花，那么今生让我为你守一世长情！</span><br /><br />
+               <span class="keyword">var</span> i="<span class="string">鸿宇</span>";<br />
+                <span class="keyword">var</span> u="<span class="string">十二</span>";<br />
+                <span class="keyword">var</span> time=setInterval( <span class="keyword">function</span>(){<br />
+                <span class="space"/> <span class="space"/> <span class="comments">//对你说 爱你</span><br />
+                 <span class="space"/> <span class="space"/><span>alert(i+'will say to ' +u+ ' Love you');</span><br>
+                    <span class="comments">//每天一次，永远这样 </span><br />
+                <span>},<span class="string">86400000</span>);</span><br /><br />
+               <span class="comments">// 你是幸运的，因为你可以选择爱我或不爱我,</span><br /><br>
+               <span class="comments">// 而我只能选择爱你还是更爱你，</span><br /><br>
+                <span class="comments">// 我想了很久，我想照顾你。</span><br /><br>
+                <span class="comments">// 我希望和你一起牵手面对今后的生活,</span><br /><br>
+                <span class="comments">// 无论贫穷还是富贵，都要与你在一起。</span><br /><br>
+                <span class="comments">// 不管你是快乐还是伤心，我随时都可以借你肩膀 给你依靠。</span><br /><br>
+                <span class="comments">// 分享生活的点点滴滴，只要你愿意。</span><br />
+               
+            </div>
+         </div>
+    </div>
+    <script type="text/javascript">
+;(function(designWidth, maxWidth) {
+    var doc = document,
+    win = window,
+    docEl = doc.documentElement,
+    remStyle = document.createElement("style"),
+    tid;
+
+    function refreshRem() {
+        var width = docEl.getBoundingClientRect().width;
+        maxWidth = maxWidth || 540;
+        width>maxWidth && (width=maxWidth);
+        var rem = width * 100 / designWidth;
+        remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+    }
+
+    if (docEl.firstElementChild){
+        docEl.firstElementChild.appendChild(remStyle);
+    } else {
+        var wrap = doc.createElement("div");
+        wrap.appendChild(remStyle);
+        doc.write(wrap.innerHTML);
+        wrap = null;
+    }
+    //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+
+    refreshRem();
+    win.addEventListener("resize", function() {
+        clearTimeout(tid); //防止执行两次
+        tid = setTimeout(refreshRem, 300);
+    }, false);
+
+    win.addEventListener("pageshow", function(e) {
+        if (e.persisted) { // 浏览器后退的时候重新计算
+            clearTimeout(tid);
+            tid = setTimeout(refreshRem, 300);
+        }
+    }, false);
+
+    if (doc.readyState === "complete") {
+        doc.body.style.fontSize = "16px";
+    } else {
+        doc.addEventListener("DOMContentLoaded", function(e) {
+            doc.body.style.fontSize = "16px";
+        }, false);
+    }
+})(1140,1140);
+
+
+            (function(a){
+            a.fn.typewriter=function(){
+                this.each(function(){
+                    var d=a(this),c=d.html(),b=0;
+                    d.html("");
+                    var top=1000;
+                    var e=setInterval(function(){
+                        var f=c.substr(b,1);
+                        if(f=="<"){
+                            b=c.indexOf(">",b)+1
+                        }else{
+                            b++
+                        }
+                        d.html(c.substring(0,b)+(b&1?"_":""));
+                        if(b>=c.length){
+                           var i = " 鸿宇 ";
+                           var u = " 十二 ";
+                           var time = setTimeout(function(){
+                            //对你说 爱你
+                            alert(i+'will say to ' +u+ ' Love you');
+                            //每天一次，永远这样
+                            },1000)
+                            clearInterval(e)
+                        }
+                            if($(window).width()>1000){
+                                   top-=0.5;
+                               $("#code").css({top:top+"px"})  
+                            }
+                              
+                    },70)
+                });
+                return this
+            }
+        })(jQuery);
+                             // var Height = $("#code").height();
+                $(document).scrollTop(1000);
+            $("#code").typewriter();
+       
+    </script>
+</body>
+</html>
